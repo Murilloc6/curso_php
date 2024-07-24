@@ -3,7 +3,7 @@
   Recriar o exercicio da tabuada (aula4) com os laços 
   while e o - while  
  */
-echo "Tabuadas! <br><br>";
+echo "<strong>Tabuadas! <br><br></strong>";
 
   $i = 0;
   $numero = 7;
@@ -23,7 +23,7 @@ echo "<br><br><br><br>";
  utilizando os laços WHILE e FOR; 
 */
 
-echo "Numeros Pares! <br><br>";
+echo "<strong>Numeros Pares! <br><br></strong>";
 
 $i1 = 0;
 $numero1 = 0;
@@ -51,14 +51,17 @@ echo "<br><br><br><br>";
 
 */
 
+echo "<strong>Soma Dos Numeros de 0 à 100<br><br></strong>";
+
 $i2 = 1;
 $soma = 0;
 
 while ($i2 <=100) {
     $soma += $i2;
+    echo "$soma + $i2 <br>";
     $i2++;
 }   
-echo "Resultado de 1 até 100: $soma";
+echo "<strong>Resultado de 1 até 100: $soma</strong>";
 
 // exercicio acima completo e funcionando;
 
@@ -76,10 +79,21 @@ echo "<br><br><br><br>";
     Soma Impares:
 */
 
-$i3 = 1;
-$soma2 = 0;
+$somadospares = 0;
+$somadosimpares = 0;
 
-while ($i3 <=100) {
-    $soma2 + $i3;
-    $i3 + $i3 +2;
+for ( $i3 = 1; $i3 <= 100; $i3++){
+    // Armazena na variavel $par
+    // o resultado da sobra da divisão por 2
+    $par = $i3 % 2;
+
+    if ($par == 0){
+    //echo "O número $i3 é Par!<br>";
+    $somadospares = $somadospares + $i3;
+}else{
+      //echo "O número $i3 é Impar! <br>";
+      $somadosimpares += $i3;
+    }
 }
+    echo "Soma Dos Pares = $somadospares <br>";
+    echo "Soma Dos Impares = $somadosimpares <br>";
