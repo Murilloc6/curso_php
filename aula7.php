@@ -37,9 +37,16 @@ echo "<strong> Pares: </strong> <br>";
 
     echo "<br> <br>";
 
-    echo "<strong> Impares: </strong> <br>";
-    for ($i1 = count($vetorImpar); $i1 <= 0; $i1--){
-        echo $vetorImpar [$i1] . ", "; // 1, 3, 5, 7 ...
+    echo "<strong> Pares: </strong> <br>";
+    for ($i1 = 0; $i1 <=count(vetorPar); $i1 >= 100 $i1--){
+        echo $vetorPar [$i1] . ", ";        // 1, 3, 5, 7 ...
         }
  
+        echo "<br> <br>";
+
+        echo "<strong> Impares: </strong> <br>";
+        for ($i3 = 0; $i3 <=count(vetorImpar); $i3 >= 100 $i3--){
+            echo $vetorImpar [$i1] . ", ";
+            }
+
 
