@@ -80,16 +80,28 @@ echo "$operacao = $valor, <br>Extrato: $saldoAtual<br><br>";
 */
 
 function isValidCPF($CPF){
+    $mascara = "/^[0-9]*$/";
+    $cpfInterno = preg_replace($mascara, "", $CPF);
+    $digitosCpf = strlen($cpfInterno);
+    if ($cpfInterno = empty($cpfInterno))
+if ($digitosCpf = 11){
 
-    // Código aqui
+    return $cpfInterno;
+}
 
     return true;
 }
 
 function isValidCNPJ($CNPJ){
+    $mascara = "/^[0-9]*$/";
+    $cnpjInterno = preg_replace($mascara, "", $CNPJ);
+    $digitosCnpj = strlen($cnpjInterno);
 
-    // Código aqui
 
+if ($digitoscnpj = 14){
+
+    return $cnpjInterno;
+}
     return true;
 }
 
@@ -97,9 +109,19 @@ $CPF = "098.543.191-89";
 $cpfValido = isValidCPF($cpf);
 
 if ($cpfValido){
-    echo "O CPF informado $cpf é Valido!";
+    echo "O CPF informado $CPF é Valido!";
 }else {
-    echo "O CPF informado: $cpf é Invalido";
+    echo "O CPF informado: $CPF é Invalido";
+}
+echo "<br> <br>";
+
+$CNPJ = "95.764.913/8617-35";
+$cnpjValido = isValidCPF($CNPJ);
+
+if ($cnpjValido){
+    echo "O CNPJ informado $CNPJ é Válido!";
+}else {
+    echo "O CNPJ informado: $CNPJ é Invalido";
 }
 
 
