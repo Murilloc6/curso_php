@@ -9,13 +9,45 @@
 // Ex: Usuario1234.php
 // class Usuario1234 {}
 
-echo "oi";
-exit;
 
-require_once './src/Conexao.php';
+//require_once './src/Conexao.php';
+
+//global $conexao;
+
+//var_dump ($conexao);
 
 class UsuarioModel {
     
+    private $fields = [
+        'id',
+        'cpf',
+        'email',
+        'senha',
+        'excluido',
+        'usuario_alteracao',
+        'data_criacao',
+        'data_atualizacao',
+    ];
+    
+    public function create() {
+
+    }
+
+    public function read($id) {
+
+    }
+
+    public function ReadAll() {
+
+    }
+
+    public function update($id) {
+
+    }
+    
+    public function delete($id) {
+
+    }
 
 }
 
