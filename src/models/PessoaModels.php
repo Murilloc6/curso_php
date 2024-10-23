@@ -3,11 +3,7 @@
 class PessoaModels {
 
     private $fields = [
-        'id',
-        'excluido',
-        'usuario_alteracao',
-        'data_criacao',
-        'data_atualizacao',
+
         'nome',
         'sobrenome',
         'nome_completo',
@@ -20,7 +16,7 @@ class PessoaModels {
         'data_nascimento',
         'id_usuario',
     ];
-    
+
     public function create() {
 
     }

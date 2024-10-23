@@ -3,7 +3,6 @@
 class EnderecoModels {
 
     private $fields = [
-        'id',
         'rua',
         'bairro',
         'numero',
